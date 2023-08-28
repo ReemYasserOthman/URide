@@ -1,0 +1,137 @@
+<body>
+    <div class="journey-container">
+        <div class="bg">
+            <div id="alert" class="alert alert-success w-15 py-3 ms-auto mt-3 me-3 alert-dismissible" role="alert" [class]="show == false ? 'hideAlert':'showAlert'">
+               Journey is created successfully
+            </div>
+            <h2>Book Your Travel Ride Now</h2>
+            <p>Travel and Commute Between Cities With Ease.</p>
+            <div class="add-journey">
+                <div class="journey-info">
+                     <div class="container container-lg ">
+                        <form  #postForm="ngForm" (ngSubmit)="addTrip(postForm.value)">
+                        <div class="row">
+                            <div class="labels">
+                                <label for="" class="col-lg-3">From</label>
+                                <label for="" class="col-lg-3">To</label>
+                                <label for="" class="col-lg-3">Rule Of User</label>
+                                <label for="" class="col-lg-3">Leave Time</label>
+                                <label for="" class="col-lg-3">Return Time</label>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="from col">
+                                <select name="startCityId" required ngModel id="startCityId">
+                                   <option *ngFor="let city of cityData;" value="{{city.id}}" >{{ city.name}} </option>
+                                    <!-- <option value="">cairo</option> -->
+                                </select>
+                            </div>
+                            <div class="to col">
+                                <select name="distinationCityId" required ngModel>
+                                    <option *ngFor="let city of cityData;" value="{{city.id}}" >{{ city.name}} </option>
+                                 </select>
+                            </div>
+                            
+                            <div class="date col">
+                               <select name="roleOfUser" id="" required ngModel>
+                                <option value="passenger">Passenger</option>
+                                <option value="driver">Driver</option>
+                               </select>
+                            </div>
+                            <div class="leaving-time col">
+                                <input type="datetime-local" class="form-control" name="leavingTime" required ngModel>
+                            </div>
+                            <div class="returning-time col">
+                                <input type="datetime-local" class="form-control" name="returing" required ngModel>
+                            </div>
+                           
+                        </div>
+                        <div class="row pt-2">
+                            <div class="labels">
+                                <label for="" class="col-lg-3">Price</label>
+                                <label for="" class="col-lg-3">Frequency</label>
+                                <label for="" class="col-lg-3">Rules</label>
+                                <label for="" class="col-lg-3">Comments</label>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="Price col">
+                               <input type="text" class="form-control" name="price"  required ngModel>
+                            </div>
+                            <div class="frequency col">
+                              <select name="frequency" id="" required ngModel>
+                                <option value="0"></option>
+                                <option value="one to one">one to one</option>
+                                <option value="shift">Shift</option>
+                              </select>
+                            </div>
+                            
+                            <div class="rules col">
+                                <input type="text" class="form-control" name="rules" required ngModel>
+                            </div>
+                            <div class="comments col">
+                                <input type="text" class="form-control" name="comment" required ngModel>
+                            </div>
+                            <div class="createdById d-none">
+                                <input type="text" class="form-control d-none" name="createdById"  [(ngModel)]="token">
+                            </div>
+                            <div class="btn-con col">
+                                <button class="btn btn-search fw-bold">Add Trip</button>
+                            </div>
+                        </div>
+                        </form>
+                           
+                            
+                        </div>
+                     </div>
+                </div>
+    
+            </div>
+        </div>
+        <div class="journey-advantages">
+            <div class="container">
+                <div class="row mt-5 pb-3">
+                    <div class="arrive-on-time col">
+                        <img src="assets/img/bus_arrived.svg" alt="">
+    
+                        <h3>Arrive On Time</h3>
+                        <p>Our scheduled, non-stop trips will get you there faster.</p>
+                    </div>
+                    <div class="comfort col">
+                        <img src="assets/img/bus_comfort.svg" alt="" style="width: 150px; height: 90px;">
+                        <h3>Your Comfort Matters</h3>
+                        <p>Enjoy the extra legroom and entertainment available onboard.</p>
+                    </div>
+                    <div class="tracking col">
+                        <img src="assets/img/bus_tracking.svg" alt="">
+                        <h3>Live Taracking</h3>
+                        <p>Always stay updated with your bus location.</p>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+   
+    <div class="download-app">
+        <div class="row">
+            <div class="download-app-caption col-9">
+                <div class="row">
+                    <p>Download The App to Enjoy Easy Booking and Ride Tracking!</p>
+                <p class="p-description">Working across cities, visiting family, or taking that long awaited vacation. Uride
+                    Travel just made it easier! Download the app today and unlock the full experience.</p>
+                </div>
+                    <div class="row">
+                        <img src="assets/img/appstore.png" alt="app store">
+                        <img src="assets/img/googleplay.png" alt="google play">
+                    </div>
+            </div>
+            <div class="download-app-img col-3">
+                <img src="assets/img/mobile-app.PNG" alt="mobile app" />
+            </div>
+            <div class="clearfix"></div>
+        </div>              
+    </div>
+    <app-footer class="footer"></app-footer>
+</body>

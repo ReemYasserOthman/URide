@@ -1,0 +1,277 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+.container-fluid{
+    width:95%;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+
+.bg-gray{
+    background-image:url("./../../assets/img/profile-img.jpeg");
+    background-size: 100% 100%;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    height: 60vh;
+}
+
+.overlay{
+    background-color: rgb(0, 0, 0 ,.2);
+    height: 60vh;
+}
+
+.caption{
+    position: relative;
+    top:45%
+}
+
+.caption h2{
+    color: #FFF;  
+    font-size: 40px;
+    
+}
+
+.user-info{
+    position: absolute;
+    display: inline-block; 
+    padding-top: 40px;
+    padding-left: 20px;
+    width: 400px;
+}
+
+
+.caption p{
+    color: #6E6D7A;
+    margin: 0;
+}
+
+
+.caption-container button{
+    position: absolute;
+    right: 10px;
+    bottom: -60px;
+    background: transparent;
+    border: 1px solid #e7e7e9;
+    color:#6E6D7A;
+    padding: 10px 20px;
+
+}
+
+.my-journey{
+    margin-top: 200px;
+    text-align: center;
+    color: #22236F;
+}
+
+.card{
+    height: 400px;
+    padding: 20px;
+}
+
+.my-journey h2{
+    padding-bottom: 30px;
+}
+
+.from , .to{
+    width: 20px;
+    height: 20px;
+    background-color: #22236F;
+    border-radius: 50%;
+}
+
+.from{
+    float: left;
+}
+
+.from-to{
+    border: 2px dotted #e7e7e9;
+}
+
+.to{
+    float: right;
+}
+
+.trips{
+    /* box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1),0 2px 4px -1px rgba(0,0,0,0.06);
+    background-color:#FFF; */
+    width: 73%;
+    height:210px;
+    padding: 10px 40px 0px 60px;
+    /* border: 1px solid #e7e7e9; */
+    border-right: 3px solid #fc153b;
+}
+
+.trips h2{
+    font-size: 1.5rem;
+}
+
+.trips ul{
+    list-style: none;
+    border-bottom: 1px solid #e7e7e9;
+    padding-bottom: 15px;
+}
+
+.trips li{
+    padding:6px 0px;
+    cursor: pointer;
+}
+
+
+
+
+.journey {
+    height: 250px;
+    background-color: #FFF;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1),0 2px 4px -1px rgba(0,0,0,0.06);
+    border: 1px solid #e7e7e9;
+    /* margin-bottom: 50px; */
+    position: relative;
+    /* left: 24%; */
+    /* margin-top: -13%; */
+}
+
+.journey .first-row{
+    padding-top: 50px;
+}
+
+.journey time{
+    font-size: 15px;
+    line-height: 2rem;
+    font-weight: 900;
+    width: 12%;
+    padding: 0px 10px;
+}
+
+.border1{
+    border-top: 5px solid #fc153b;
+    width: 200px;
+    margin-top: 15px;
+}
+
+.journey .mg{
+    margin-left: 10px;
+    padding-top: 5px;
+    width: 6%;
+}
+
+.journey .price{
+    margin-left: 100px;
+    padding: 0; 
+    margin-bottom: 0;  
+}
+
+.journey .price-span{
+    font-weight: 900;
+    font-size: 1.4rem;
+    margin-left: -10px;
+}
+
+.second-row .from2 p{
+    margin-left: 10px;
+    padding: 0;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.from2 span{
+    margin-left: 10px;
+    color: rgba(97,107,128);
+    font-size: 1rem;
+}
+
+.second-row hr{
+    width: 73.5%;
+    border-top-width: 1px;
+    border-color: rgba(0,0,0,.07);
+    display: flex;
+    margin-top: -10px;
+    margin-left: 8px;
+}
+
+.second-row .from2{
+    margin: 0;
+    padding: 0;
+    width: 95%;
+}
+
+.to2{
+    margin-left: 30px;
+}
+
+.to2 p{
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.to2 span{
+    margin-left: 50px;
+    color: rgba(97,107,128);
+    font-size: 1rem;
+}
+
+.promo span{
+    color: rgba(97,107,128);
+    font-size: .875rem;
+    line-height: 1.25rem;
+}
+
+.border2{
+    --tw-gradient-to:var(--tw-gradient-from),var(--tw-gradient-stops,rgba(239,67,73,0));
+    --tw-gradient-from: #fc153b;
+    --tw-gradient-stops:#6a61e7 ;
+    background-image: linear-gradient(to right,var(--tw-gradient-to));
+    width: 200px;
+    height: 4px;
+    border-radius: 0.5rem;
+    margin-top: 15px;
+}
+
+.promo button{
+    text-align: center;
+    padding:10px 30px;
+    text-transform: uppercase;
+    font-size: 100%;
+    color: #fc153b;
+    height: 48px;
+    border: 2px solid  #fc153b;;
+    font-weight: 700;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    border-radius: .25rem;
+    width: 154px;
+    margin-top: 40px;
+    background: transparent;
+}
+
+.selectedLink{
+    color:#fc153b;
+}
+
+.no-results{
+    width: 300px;
+    height: 190px;
+    position: relative;
+    left: 45%;
+    top: -100%;
+    text-align: center;
+}
+
+.no-results img{
+    width: 60%;
+}
+
+.no-results h3{
+    font-size: 30px;
+    font-weight: 700;
+}
+

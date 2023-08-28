@@ -1,0 +1,177 @@
+<body>
+	<div class="sign-up">
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="sign-up-img">
+					<div class="layer">
+						<div class="caption">
+							<h2>Looking for driver job?</h2>
+							<p>sign up and discover amount of new offers</p>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="sign-up-caption">
+					<h2 class="pt-3">Sign up</h2>
+					<form  #postForm="ngForm" (ngSubmit)="onAddNewDriver(postForm.value)">
+						<!-- [formGroup]="signupForm" -->
+						<div class="fname d-flex">
+							<div >
+								<input type="text" ngModel name="firstName" id="fname" class="form-control"
+									 placeholder="First name" autocomplete="off"
+									 
+									[(ngModel)]="firstName">
+								<small class="text-danger d-block ms-3"
+									*ngIf="!signupForm?.get('firstName')?.valid && signupForm?.get('firstName')?.touched">Please
+									enter firstname </small>
+							</div>
+							<!-- formControlName="firstName" -->
+							<!-- formControlName="lastName" -->
+							<div class="ms-3">
+								<input type="text" ngModel name="lastName" id="lname" class="form-control"
+									 placeholder="Last name" autocomplete="off"
+									[(ngModel)]="lastName">
+								<small class="text-danger ms-3"
+									*ngIf="!signupForm?.get('lastName')?.valid && signupForm?.get('lastName')?.touched">Please
+									enter lastName </small>
+							</div>
+						</div>
+						<div class="d-flex">
+							<!-- formControlName="userName" -->
+							<div>
+								<input type="text" ngModel name="userName" class="form-control "
+									 placeholder="User name" autocomplete="off">
+								<small class="text-danger ms-3"
+									*ngIf="!signupForm?.get('userName')?.valid && signupForm?.get('userName')?.touched">Please
+									enter username </small>
+							</div>
+							<!-- formControlName="email"  -->
+							<div class="ms-3">
+								<input type="email" ngModel name="email" id="email" class="form-control "
+									placeholder="Email" autocomplete="off">
+								<small class="text-danger ms-3"
+									*ngIf="!signupForm?.get('email')?.valid && signupForm?.get('email')?.touched">Please
+									enter a valid email </small>
+							</div>
+						</div>
+						<!-- <div class="email">
+							
+						</div> -->
+						<!-- formControlName="password" -->
+						<div class="password">
+							<input type="password" style="width: 95%;" ngModel name="password" class="form-control" id="password"
+								placeholder="Password"  autocomplete="off">
+							<small class="text-danger ms-3"
+								*ngIf="!signupForm?.get('password')?.valid && signupForm?.get('password')?.touched">Please
+								enter a valid password </small>
+
+						</div>
+						<div class="d-flex">
+							<!-- formControlName="phoneNumber" -->
+							<div>
+								<input type="text" ngModel name="phoneNumber" id="phone" class="form-control "
+									placeholder="Phone No." autocomplete="off" >
+								<small class="text-danger ms-3"
+									*ngIf="!signupForm?.get('phoneNumber')?.valid && signupForm?.get('phoneNumber')?.touched">Please
+									enter a valid phone No. </small>
+							</div>
+							<div class="ms-3">
+								<!-- formControlName="licence" -->
+								<input type="text" ngModel name="driverLicence" id="licence" class="form-control "
+									placeholder="Licence" autocomplete="off" >
+								<small class="text-danger ms-3"
+									*ngIf="!signupForm?.get('licence')?.valid && signupForm?.get('licence')?.touched">Please
+									enter a valid licence </small>
+							</div>
+						</div>
+						<div class="d-flex">
+							<div class="">
+								<!-- formControlName="nationalId" -->
+								<input type="text" ngModel name="nationalId" id="nationId" class="form-control"
+									placeholder="NationalID" autocomplete="off" >
+								<small class="text-danger ms-3"
+									*ngIf="!signupForm?.get('nationalId')?.valid && signupForm?.get('nationalId')?.touched">Please
+									enter a valid nationalId </small>
+							</div>
+							<div class="ms-3">
+								<!-- formControlName="carNumber" -->
+								<input type="text" ngModel name="carNumber" id="carNumber" class="form-control"
+									placeholder="Car Number" autocomplete="off" >
+								<small class="text-danger ms-3"
+									*ngIf="!signupForm?.get('carNumber')?.valid && signupForm?.get('carNumber')?.touched">Please
+									enter a valid car number</small>
+							</div>
+						</div>
+						<div class="d-flex " style="height:49px">
+							<div>
+								<!-- formControlName="carModel" -->
+								<input type="text" ngModel name="carModel" id="carModel" class="form-control"
+									placeholder="Car Model" autocomplete="off" >
+								<small class="text-danger ms-3"
+									*ngIf="!signupForm?.get('carModel')?.valid && signupForm?.get('carModel')?.touched">Please
+									enter car model </small>
+							</div>
+							<!-- <input   placeholder="Car Type" autocomplete="off"> -->
+							<div class="ms-3">
+								<!-- formControlName="carType" -->
+								<select  ngModel required name="carTypeId" id="carType" class="form-control" style="width:205px"
+									>
+									<option value="" disabled selected> Car Name </option>
+									<option *ngFor="let car of carType; let i = index " value="{{i+1}}">{{ car.name}}
+									</option>
+								</select>
+								<small class="text-danger ms-3"
+									*ngIf="!signupForm?.get('carType')?.valid && signupForm?.get('carType')?.touched">Please
+									choose car type </small>
+							</div>
+						</div>
+						<div class="user-img ms-2 mt-3" style="width: 86%;">
+							<div class="mb-3">
+								<label class="form-check-label ps-2 mb-1" for="flexRadioDefault1">
+									Choose your picture:
+								</label>
+								<!-- formControlName="picture" -->
+								<input required ngModel name="picture" class="form-control input-pic" type="file"
+									id="formFileMultiple">
+								<small class="text-danger ms-3"
+									*ngIf="!signupForm?.get('picture')?.valid && signupForm?.get('picture')?.touched">Please
+									choose picture </small>
+
+							</div>
+						</div>
+						<div class="gender ps-3 pt-2 d-flex" style="height: 25px;">
+							<div class="form-check  ms-3">
+								<!-- formControlName="gender" -->
+								<input class="form-check-input" [(ngModel)]="gender" type="radio" value="m"
+									name="gender" id="flexRadioDefault1">
+								<label class="form-check-label" for="flexRadioDefault1">
+									Male
+								</label>
+							</div>
+							<div class="form-check ms-3 ">
+								<!-- formControlName="gender" -->
+								<input class="form-check-input" [(ngModel)]="gender" type="radio" value="f"
+									name="gender" id="flexRadioDefault2" >
+								<label class="form-check-label" for="flexRadioDefault2">
+									Female
+								</label>
+							</div>
+						</div>
+
+
+						<div class="margin-top:-50px">
+							<!-- <button type="submit" class="btn btn-signup" [disabled]="!signupForm.valid">Sign up </button>
+							<p style="margin-left: 95px;">Already have an account? <a routerLink="/login">sign in</a></p> -->
+
+							 <button type="submit" class="btn ms-4" [disabled]="!postForm.valid">Sign up </button>
+						<p class="ms-5 ps-4 p-signin">Already have an account? <a routerLink="/login">sign in</a></p> 
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>

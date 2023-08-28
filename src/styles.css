@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "Lobster";
+    src: local("Lobster"), url(./assets/fonts/Lobster/Lobster-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Oranienbaum";
+    src: local("Oranienbaum"), url(./assets/fonts/Oranienbaum/Oranienbaum-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: local("Oranienbaum"), url(./assets/fonts/Roboto/Roboto-Light.ttf) format("truetype");
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+

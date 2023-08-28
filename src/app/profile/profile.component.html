@@ -1,0 +1,137 @@
+<body>
+
+    <div class="row">
+        <div class="caption-container">
+            <div class="bg-gray">
+                <div class="overlay">
+                    <div class="caption">
+                        <h2>My Trips</h2>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="my-trips col-lg-3">
+            <div class="trips">
+                <h2>My Trips</h2>
+                <ul>
+                    <li (click)="onSelect('upcoming')" [class.selectedLink] = "featureSelected == 'upcoming'">Upcoming Trips
+                    </li>
+                </ul>
+                <h2 (click)="onSelect('edit')" style="cursor: pointer; padding-top:15px">
+                   Edit profile
+                </h2>
+                <h2 (click)="onSelect('editPassword')" style="cursor: pointer; padding-top:15px">
+                   Edit password
+                </h2>
+            </div>
+        </div>
+        <div *ngIf="featureSelected === 'upcoming'" class="col-md-9 " >
+             <!-- chage -->
+            <div *ngIf="UserTrips?.length != 0"class="col-md-12 m-auto" >
+                <div class="journey col-md-12" style="margin-bottom: 50px;"  *ngFor="let trip of UserTrips">
+                    <div class="container">
+                        <div class="row first-row">
+                            <time class="col-lg-2" datetime="2022-04-02 02:00:00">
+                                {{trip.leavingTime}}
+                            </time>
+                            <div class="border2 col-lg-2"></div>
+                            <div class="col-lg-2 mg"></div>
+                            <div class="border2 col-lg-2"></div>
+                            <time class="col-lg-4" datetime="2022-04-02 02:00:00">
+                                {{trip.returing}}
+                            </time>
+                            <p class="col-lg-2 price">
+                                <span class="price-span">EGP {{trip.price}} /seat</span>
+        
+                            </p>
+                        </div>
+                        <div class="row second-row">
+                            <div class="col-lg-6">
+                                <div class="from2">
+                                    <p>{{trip.startCityName}}</p>
+                                    <!-- <span>Cairo</span> -->
+                                </div>
+                            </div>
+                            <div class="to2 col-lg-3">
+                                <p>{{trip.distinationCityName}}</p>
+                                <!-- <span>Alexandria</span> -->
+                            </div>
+                            <div class="promo col-lg-2">
+                                <!-- <button (click)="onSelect('trip')">Edit trip</button> -->
+                                <button (click)="editTrip(trip)" routerLink="/editTrip">Edit trip</button>
+                            </div>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+            <!-- chage -->
+            <div *ngIf="UserTrips?.length == 0" class="no-results">
+                <img src="assets/img/no_results.svg" alt="no results">
+                <h3>No trips</h3>
+                <p>You don't have any trips right now</p>
+            </div>
+        </div>
+        
+
+        <div  *ngIf="featureSelected === 'edit'" class="col-lg-9">
+            <app-edit-profile></app-edit-profile>
+        </div>
+        <div  *ngIf="featureSelected === 'editPassword'" class="col-lg-9">
+            <app-edit-password></app-edit-password>
+        </div>
+
+        <div  class="view-trip col-lg-9"  *ngIf="featureSelected === 'trip'">
+                <div class="container">
+                    <div class="row first-row">
+                        <div class="col-lg-9">
+                            <h2>Sun, Apr 10th</h2> 
+                        </div>
+                        <div class="col-lg-2">
+                            <h3>Duration: 3h 26m</h3>
+                        </div>
+                       
+                    </div>
+                    <div>
+                        <time class="col-lg-2" datetime="2022-04-02 02:00:00">
+                            2:00 AM
+                        </time>
+                        
+                        <p class="col-lg-2 price">
+                            <span class="price-span">EGP 120</span>
+    
+                        </p>
+                    </div>
+                    <div class="row second-row">
+                        <div class="col-lg-6">
+                            <time class="col-lg-4" datetime="2022-04-02 02:00:00">
+                                4:00 AM
+                            </time>
+                            <div class="from2">
+                                <p>Al Gish St (other Side)</p>
+                                <span>Cairo</span>
+                            </div>
+                        </div>
+                        <div class="to2 col-lg-3">
+                            <p>Sheraton Montazah Hotel</p>
+                            <span>Alexandria</span>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+
+    </div>
+<app-footer></app-footer>
+</body>
+

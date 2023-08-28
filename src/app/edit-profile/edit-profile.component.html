@@ -1,0 +1,72 @@
+<body>
+    
+
+    <div class="edit-profile">
+       <div class="container">
+       <form [formGroup] ="form" (ngSubmit)="userUpdate(form.value)">
+        <!-- <div class="row row-img">
+            <div class="col-lg-2">
+                <div class="profile-img">
+                    <img src="assets/img/sfrt-min.jpg" alt="girl">
+                </div>
+            </div>
+           
+
+            <div class="col-lg-4">
+                <button class="btn bg-color">Change</button>
+                <button class="btn bg-transparent">Remove</button>
+            </div>
+
+        </div> -->
+        
+        <div class="row" >
+            <!-- <h3>General</h3> -->
+            <div class="col-lg-5">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" class="form-control" name="firstName" formControlName="firstName"  >
+            </div>
+            <div class="col-lg-5" style="margin-left: -70px;">
+                <label for="lname" class="label">Last Name</label>
+                <input type="text" id="lname" class="form-control" name="lastName"  formControlName="lastName">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-10">
+                <label for="username">User Name</label>
+                <input type="text" id="username" class="form-control" name="userName" formControlName="userName" >
+            </div>
+                
+        </div>
+        <div class="row">
+            <div class="col-lg-10">
+                <label for="phone">Phone No.</label>
+                <input type="text" id="phone" class="form-control" name="phoneNumber" formControlName="phoneNumber">
+            </div>
+                
+        </div>
+
+        <div class="row">
+            <!-- <h3>Security</h3> -->
+            <div class="col-lg-10">
+                <label for="email">Email</label>
+                <input type="text" id="email" class="form-control" name="email" formControlName="email">
+            </div>
+                
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+            </div>
+
+            <div class="col-lg-4" style="margin-top: -30px;">
+                <button class="cancel-btn btn" routerLink="/">Cancel</button>
+                <button class="save-btn btn" type="submit">Save</button>
+            </div>
+                
+        </div>
+       </form>
+
+       </div>
+
+    </div>
+
+</body>

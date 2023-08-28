@@ -1,0 +1,54 @@
+<nav>
+    <div class="container">
+        <div class="row">
+            <div class="navbar">
+                <!-- <a href="#" class="logo col-lg-5"><img src="../assets/img/lohh.png" alt=""></a>  -->
+                <a href="#" class="logo col-lg-5"><img src="../assets/img/lohh.png" alt=""></a> 
+                
+                <ul class="left-list col-lg-4">
+                    <li>
+                        <a routerLink="home">Home</a>
+                    </li>
+                    <li>Process</li>
+                    <li>About</li>
+                    <li>Pricing</li>
+                    <li>Blog</li>
+                    <li>Messages</li>
+                    <li>
+                        <a routerLink="journey">Add&nbsp;journey</a>
+                    </li>
+                </ul>
+
+                <div class="wrap col-lg-1">
+                    <div class="test" (mouseenter)="toggleMenu()" (mouseleave)="toggleMenu()">
+                        <div class="img">
+                            <img src="assets/img/matheus-ferrero-346656-unsplash.png" alt="">
+                        </div>
+                        <div class="drop-menu" [hidden]="DropMenu">
+                            <ul>
+                                <!-- <li>
+                                    <img src="assets/img/matheus-ferrero-346656-unsplash.png" alt="">
+                                    <span>Simon Mohamed</span>
+                                    <span>semoonmohamed9@gmail.com</span>
+                                </li> -->
+                                <li>
+                                    <a routerLink="profile">Profile</a>
+                                </li>
+                                <li>
+                                    <a routerLink="editprofile">Edit Profile</a>
+                                </li>
+                                <hr>
+                                <li>Payment</li>
+                                <li>Install App</li>
+                                <hr>
+                                <li>Support</li>
+                                <li>Sign Out</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,110 @@
+<!-- header -->
+<body>
+    
+
+<header>
+    <div class="overlay">
+        <div class="container">
+            <app-navbar *ngIf="id == '' "></app-navbar>
+            <app-second-navbar *ngIf="id != '' "></app-second-navbar>
+        </div>
+        
+        <div class="banner">
+            <button>download</button>
+        </div>
+    </div>  
+</header>
+
+<!-- following -->
+
+<div class="following">
+    <div class="container">
+        <div class="row">
+            <div class="following-heading col-lg-6">
+                <h2>A Urider Urides everyday in the most Uridein ride. Following?</h2>
+            </div>
+            <div class="following-p col-lg-6">
+                <p>Arrive at your destination in the smoothest ride possible, by sailing through real-time trip planning to payment with a few clicks.</p>
+                <img src="assets/img/arrow.webp" alt="arrow">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="border-bottom"></div>
+
+<!-- Book steps -->
+
+<div class="book-steps">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <h3>01.</h3>
+                <h2>Book</h2>
+                <p>A ride on <br>
+                    your phone</p>
+                    <img src="../../assets/img/home-img.jpg" alt="book" class="mt-4">
+            </div>
+            <div class="col-lg-4">
+                <h3>02.</h3>
+                <h2>Uride</h2>
+                <p>And get picked <br>
+                    up at your <br> 
+                    closest station </p>
+                    <img src="assets/img/Swvl.svg" alt="uride">
+            </div>
+            <div class="col-lg-4">
+                <h3>03.</h3>
+                <h2>Save</h2>
+                <p>With pocket <br>
+                    friendly rates</p>
+                    <img src="assets/img/Save.webp" alt="save" class="mt-4">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- experience -->
+
+<div class="experience">
+    <div class="row">
+        <div class="experience-caption col-lg-5">
+            <h2>Such a Uridein' experience.</h2>
+            <p>We're never more than 5 minutes away with pick-up stations closer from and to your home, office or anywhere in between. Grabbing coffee along your way?</p>
+        </div>
+
+        <div class="experience-img col-lg-7"></div>
+    </div>
+</div>
+
+<!-- comfortable -->
+
+<div class="comfortable">
+    <div class="container">
+        <div class="row">
+            <h2>As comfortable as a couch & as always, safe & sound</h2>
+            <div class="border-btm"></div>
+            <div class="steps col-lg-8">
+                <ul>
+                    <li>
+                        <span>01.</span> 
+                        <p>Where would you like to go?</p>
+                    </li>
+                    <li>
+                        <span>02.</span>
+                        <p>Choose your ride, time and date</p>
+                    </li>
+                    <li>
+                        <span>03.</span>
+                        <p>Book your ride.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="comfortable-img col-lg-4 position-relative" >
+                <img src="assets/img/hand_with_mobile.svg" alt="">
+                <div class="img-layer"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>
+</body>

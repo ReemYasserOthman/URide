@@ -1,0 +1,41 @@
+.contact{
+    margin-bottom: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    font-family: Circular,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    /* color:#22235A ; */
+    margin: 10px 0px 10px 0px;
+    font-size: 30px;
+}
+
+p{
+    margin-bottom: 40px;
+    /* color: #2a2a2a; */
+    color: #6E6D7A;
+}
+
+input{
+    width: 90%;
+    border: none;
+    background-color: #FFF;
+    box-shadow: 2px 2px 4px #DDD;
+    padding: 15px 40px;
+    /* border-radius: 3px; */
+    margin-left: 20px;
+}
+
+button{
+    background-color: #fc153b;
+    /* box-shadow: 2px 2px 4px #DDD; */
+    color: #FFF;
+    padding: 15px 5px;
+    border: none;
+    /* border-radius: 3px; */
+    text-transform: uppercase;
+    font-weight: 600;
+}

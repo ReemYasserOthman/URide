@@ -1,0 +1,89 @@
+.container{
+    width: 70%;
+    margin: auto;
+}
+
+.driver{
+    margin: 70px 0px;
+    padding: 70px 0px;
+}
+
+/* .border-img2{
+    background-color: #fc153b;
+    position: absolute;
+    z-index:1;
+    height: 300px;
+    width: 300px;
+    top: -2.5%;
+    left: 20%;
+} */
+
+.border-img2{
+    background-color: transparent;
+    position: absolute;
+    z-index:1;
+    height: 350px;
+    width: 420px;
+    top: -7%;
+    left: 0%;
+    border:3px solid black;
+    border-bottom: none;
+}
+
+.fa-check{
+    content: '\f1c8';
+    display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.driver-img{
+    position: relative;
+}
+
+.driver img{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    height: 390px;
+    width: 70%;
+
+}
+
+.driver .driver-info{
+    padding-top: 40px;
+    padding-left: 50px;
+}
+
+.driver h2{
+    color: #000;
+    font-size: 25px;
+}
+
+.driver ul{
+    list-style: none;
+}
+
+.driver ul li{
+    margin-top: 20px;
+    color: #212529;
+}
+
+.driver button{
+    border:none;
+    background-color: #fc153b;
+    color: #FFF;
+    padding: 15px 40px;
+    margin-top: 15px;
+    font-weight: bold;
+    border: 1px solid transparent;
+}
+
+.driver button:hover{
+    background-color: #da1434;
+    border: 1px solid #da1434;
+}

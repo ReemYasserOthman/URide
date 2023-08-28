@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+   border-bottom: .5px solid #e7e7e9;
+}
+
+.container{
+    width: 87%;
+    margin: auto;
+}
+
+.navbar a.logo{
+    font-family: "Oranienbaum" , Arial, Helvetica, sans-serif;
+    font-size: 27px;
+    text-decoration: none;
+    color: #22236F;
+    font-weight: 800;
+}
+
+.navbar ul.left-list{
+    list-style: none;
+    display: flex;
+    /* padding-left: 10px; */
+    font-size: 18px;
+}
+
+.navbar ul li{
+    color: #6E6D7A;
+    cursor: pointer
+}
+
+.navbar ul.left-list li{
+    padding: 25px 16px;
+}
+
+.navbar ul.left-list li:hover{
+    color: #22236F;
+}
+
+a{
+    text-decoration: none;
+    color: #6E6D7A;
+    cursor: pointer;
+}
+
+.wrap{
+    padding: 10px 0px 0px 190px;
+}
+
+.test{
+    width: 40px;
+}
+
+.navbar img{
+    width: 40px;
+    padding-bottom: 10px;
+}
+
+div.drop-menu{
+    width: 255px;
+    /* height: 480px; */
+    background-color: #FFF;
+    line-height: 20px;
+    font-size: 14px;
+    border-radius: 8px;
+    box-shadow: 0px 10px 50px rgb(0 0 0 / 10%);
+    /* box-shadow: 2px 2px 4px #DDD; */
+    position: absolute;
+    right: -97px;
+    z-index: 9;
+}
+
+.drop-menu ul::before{
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #fff;
+    border-left: 6px solid transparent;
+}
+
+div.drop-menu ul{
+    list-style: none;
+    padding: 10px 0px;
+}
+
+.drop-menu li{
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0px 0px 8px ;
+    padding: 10px 30px 10px;
+    transition: background-color .2s;
+}
+
+.drop-menu li:hover{
+    color: #0d0c22;
+    background-color: #F7F7F8;
+}
+
+.drop-menu hr{
+    width: 200px;
+    margin: auto;
+    border: none;
+    height: .2px;
+    background: #F7F7F8;
+}
+
+
+

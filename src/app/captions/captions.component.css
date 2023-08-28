@@ -1,0 +1,158 @@
+/* header */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-image: url(../../assets/img/captain.webp);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.overlay{
+    background-color: rgb(0, 0, 0 ,.45);
+    height: 100vh;
+}
+
+header .container {
+    width: 85%;
+    margin: auto;
+} 
+
+.banner{
+    position: absolute;
+    bottom: 35%;
+    width: 95%;
+    margin: auto;
+    left: 50%;
+    transform: translateX(-49%);
+    text-align: center;
+}
+
+.banner h1{
+    font-size: 80px;
+    color: #FFF;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.banner button {
+    background-color: #fc153b;
+    text-transform: uppercase;
+    color: #FFF;
+    font-weight: 900;
+    padding: 19px 35px;
+    font-size: 18px;
+    position: absolute;
+    bottom: -50%;
+    left: 49%;
+    transform: translateX(-49%);
+    border: 1px solid #fc153b;
+}
+
+/* for captains */
+
+.for-captains{
+    margin: 50px 0px;
+    padding: 50px 0px;
+}
+
+.container{
+    width: 75%;
+    margin: auto;
+}
+
+.for-captains h2{
+    padding: 50px 0px 10px;
+    font-size: 80px;
+    line-height: 1.2;
+    font-weight: 900;
+}
+
+.for-captains img{
+    transform: rotateY(-180deg);
+}
+
+.uride-captain p{
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.captains-features {
+    padding-top: 50px ;
+}
+
+ul{
+    list-style-type: none;
+    margin-top: 30px;
+}
+
+ul li{
+    padding-bottom: 30px;
+}
+
+.captains-features img{
+    width: 50px;
+    vertical-align:middle;
+}
+
+.captains-features h3{
+    font-size: 30px;
+    font-weight: 700;
+
+}
+
+.captains-features p{
+    margin-left: 60px;
+    padding-left: 50px;
+    font-size: 22px;
+}
+
+.captains-features span{
+    margin-left: 60px;
+}
+
+/* successful trip */
+
+.successful-trip{
+    background-color:#F7F8F9;
+    /* height: 500px; */
+    padding: 70px 0px 60px;
+}
+
+.successful-trip  h2{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: 40px;
+}
+
+.successful-trip p{
+    font-size: 30px;
+}
+
+.driver-img{
+    width: 500px;
+    background-color: #fc153b;
+    position: absolute;
+    left: -15%;
+    /* border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; */
+}
+
+.driver-img img{
+    width: 500px;
+    height: 450px;
+    margin-left: 20px;
+    margin-top: 20px;
+
+}
+
+.successful-img p{
+    margin-top: 30px;
+    font-size: 30px;
+}
+

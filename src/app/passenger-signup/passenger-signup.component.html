@@ -1,0 +1,88 @@
+<body>
+	<div class="sign-up">
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="sign-up-img">
+					<div class="layer">
+						<div class="caption">
+							<h2>New here?</h2>
+							<p>sign up and discover amount of new offers</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="sign-up-caption">
+					<h2>Sign up</h2>
+					<form [formGroup]="signupForm"  #postForm="ngForm" (ngSubmit)="onAddNewPassenger(postForm.value)">
+						<div class="fname inp">
+							<input required ngModel type="text" name="firstName" class="form-control"
+								placeholder="First name" autocomplete="off" formControlName="firstName">
+								<small  class="text-danger ms-3" *ngIf="!signupForm?.get('firstName')?.valid && signupForm?.get('firstName')?.touched">Please enter firstname </small> 
+
+						</div>
+						
+						<div class="lname inp">
+							<input required ngModel type="text" name="lastName" class="form-control"
+								placeholder="Last name" autocomplete="off" formControlName="lastName">
+								<small  class="text-danger ms-3" *ngIf="!signupForm?.get('lastName')?.valid && signupForm?.get('lastName')?.touched">Please enter lastname </small> 
+
+						</div>
+						<div class="username inp">
+							<input required ngModel type="text" name="userName" class="form-control"
+								placeholder="User name" autocomplete="off" formControlName="userName">
+								<small  class="text-danger ms-3" *ngIf="!signupForm?.get('userName')?.valid && signupForm?.get('userName')?.touched">Please enter username </small> 
+							
+
+						</div>
+
+						<div class="email inp">
+							<input required ngModel type="email" name="email" class="form-control"
+								placeholder="Email" autocomplete="off" formControlName="email">
+								<small  class="text-danger ms-3" *ngIf="!signupForm?.get('email')?.valid && signupForm?.get('email')?.touched">Please enter a vaild email </small> 
+								
+						</div>
+						<div class="password inp">
+							<input required ngModel type="password" name="password" class="form-control" 
+								placeholder="Password" autocomplete="off" formControlName="password">
+								<small  class="text-danger ms-3" *ngIf="!signupForm?.get('password')?.valid && signupForm?.get('password')?.touched">Please enter a vaild password </small> 
+
+						</div>
+						<div class="phone inp">
+							<input required ngModel type="text" name="phoneNumber" class="form-control"
+								placeholder="Phone No." autocomplete="off" formControlName="phoneNumber">
+								<small  class="text-danger ms-3" *ngIf="!signupForm?.get('phoneNumber')?.valid && signupForm?.get('phoneNumber')?.touched">Please enter a vaild phone No. </small> 
+
+						</div>
+						<div class="user-img ms-2 mt-3 ">
+							<div class="mb-3 inp">
+								<label class="form-check-label ps-2" for="flexRadioDefault1">
+									Choose your picture: 
+								</label>
+								<input required ngModel name="picture" class="form-control input-pic" type="file" formControlName="picture" id="formFileMultiple">
+								<small  class="text-danger ms-3" *ngIf="!signupForm?.get('picture')?.valid && signupForm?.get('picture')?.touched">Please choose picture  </small> 
+							  </div>
+						</div>
+						
+						<div class="gender ps-3 pt-2 d-flex " >
+							<div class="form-check  ms-3">
+								<input class="form-check-input" formControlName="gender" [(ngModel)] = "gender" type="radio" value="m" name="gender" id="flexRadioDefault1">
+								<label   class="form-check-label gender" for="flexRadioDefault1">
+								  Male
+								</label>
+							</div>
+							<div class="form-check ms-3 ">
+								<input  class="form-check-input"formControlName="gender"  [(ngModel)] = "gender" type="radio" value="f" name="gender" id="flexRadioDefault2">
+								<label class="form-check-label gender" for="flexRadioDefault2">
+								  Female
+								</label>
+							</div>
+						</div>					
+						<button type="submit" class="btn ms-4" [disabled]="!postForm.valid">Sign up </button>
+						<p class="ms-5 ps-4 p-signin">Already have an account? <a routerLink="/login">sign in</a></p>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>

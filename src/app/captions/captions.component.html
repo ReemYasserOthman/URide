@@ -1,0 +1,97 @@
+<body>
+    <!-- header -->
+    <header>
+        <div class="overlay">
+            <div class="container">
+                <app-navbar *ngIf="id == '' "></app-navbar>
+                <app-second-navbar *ngIf="id != '' "></app-second-navbar>
+            </div>
+            <div class="banner-container">
+                <div class="banner">
+                    <h1>Aye, Aye <br>
+                      <span>Captain!</span></h1>
+                    <button>Apply</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- For captains -->
+
+    <div class="for-captains">
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="uride-captain">
+                        <h2><h2>Only for <br>
+                            our Uride <br>
+                            Captains</h2></h2>
+                            <img src="assets/img/yellow-arrow.webp" alt="yellow arrow">
+                            <p>Our Everyday Heroes & we salute you <br>
+                                everyday!</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="captains-features">
+                        <ul>
+                            <li>
+                                <h3><img src="assets/img/steady-job.webp" alt="steady-job"> <span>A Steady Earning</span> </h3>
+                                    <p>A wise man that never doubts <br>
+                                        the importance of his job.</p>
+                            </li>
+                            <li>
+                                <h3><img src="assets/img/payments.png" alt="payments"><span>Regular Weekly Payments</span></h3>
+                                <p>Never worry about providing <br>
+                                    for the ones you love.</p>
+                            </li>
+                            <li>
+                                <h3><img src="assets/img/fixed-time.png" alt="timing"> <span>Fixed timing, routes & prices</span></h3>
+                                <p>From the second you wake up to the second you go back to sleep, your day and life are <br> yours and planned to a T.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- successful trip -->
+
+    <div class="successful-trip">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="success-caption">
+                        <h2>Our successful <br>
+                            journey begins <br>
+                            with you</h2>
+                            <p>See how we build stronger <br>
+                                relationships with our <br>
+                                customers as we change the <br>
+                                way the way we move.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="successful-img">
+                        <div class="driver-img">
+                            
+                        </div>
+                        <img src="assets/img/driver.jpg" alt="driver">
+                        
+                        <p>“My career took a lovely turn <br>
+                            once I signed with Uride.” - Captain Mostafa</p>
+                    </div>
+                   
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <app-footer></app-footer>
+</body>

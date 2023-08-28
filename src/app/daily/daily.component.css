@@ -1,0 +1,207 @@
+/* header */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-image: url(https://www.swvl.com/hubfs/Swvl_daily4.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.overlay{
+    background-color: rgb(0, 0, 0 ,.2);
+    height: 100vh;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+.banner button {
+    background-color: #fc153b;
+    text-transform: uppercase;
+    color: #FFF;
+    font-weight: 900;
+    padding: 19px 35px;
+    font-size: 18px;
+    position: absolute;
+    margin-top: 45px;
+    bottom: 116px;
+    left: 50%;
+    transform: translateX(-49%);
+    border: 1px solid #fc153b;
+    transition: background-color .5s ,  border .5s;
+}
+
+.banner button:hover{
+    background-color: #da1434;
+    border: 1px solid #da1434;
+}
+
+/* following */
+
+*{
+    font-family: Circular,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.following{
+    padding: 50px 0px;
+    margin: 50px 0px
+}
+
+.following-heading h2{
+    font-size: 60px;
+    color: #212529;
+    font-weight: 600;
+    line-height: 1.2em;
+    width: 85%;
+}
+
+.following-p p{
+    font-size: 35px;
+    color: #212529;
+    line-height: 1.2;
+    margin-bottom: 60px;
+}
+
+.border-bottom{
+    border-bottom: 1px solid #b3b3b3;
+    width: 80%;
+    margin: auto;
+}
+
+/* book staps */
+
+.book-steps{
+    margin: 60px 0px 60px 60px;
+    padding: 60px 0px 60px 60px;
+}
+
+.book-steps h2 , .book-steps p{
+    color: #212529;
+}
+
+.book-steps h3 , .comfortable span{
+    font-size: 100px;
+    color: #e6e6e6;
+    font-weight: 900;
+    line-height: .5;
+}
+
+.book-steps h2{
+    font-size: 75px;
+    font-weight: 700;
+    margin: 40px 0px ;
+}
+
+.book-steps p{
+    font-size: 32px;
+    line-height: 1.2;
+}
+
+.book-steps img{
+    position: relative;
+    left: -24%;
+    width: 300px;
+}
+
+/* experience */
+
+.experience-caption{
+    background-color:#FC153B
+}
+
+.experience-caption h2{
+    font-size: 61px;
+    color: #FFF;
+    padding: 80px 50px 30px 90px;
+    line-height: 1.2;
+}
+
+.experience-caption p{
+    color: #FFF;
+    font-size: 26px;
+    width: 80%;
+    padding: 0px 50px 30px 90px;
+}
+
+.experience-img{
+    background-image: url(https://www.swvl.com/hubfs/Swvl_daily2.jpg);
+    background-position:  center ;
+    background-size: cover;
+    height: 570px;
+}
+
+/* comfortable */
+
+.comfortable{
+    margin: 60px 0px 0px;
+    padding: 60px 0px 0px; 
+}
+
+.comfortable h2{
+    font-size: 61px;
+    width: 50%;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+
+.border-btm{
+    border-bottom: 9px solid #FC153B;
+    width: 140px;
+    position: relative;
+    left: -50%;
+    margin-bottom: 20px;
+}
+
+.steps{
+    margin: 50px 0px;
+}
+
+.steps ul{
+    list-style-type: none;
+}
+
+.steps li{
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.steps li p{
+    position: absolute;
+    top: 40%;
+    left: 4.5%;
+    font-size: 36px;
+    color: #000;
+}
+
+.comfortable-img{
+    overflow: hidden;
+}
+
+.comfortable-img img{
+    position: relative;
+    right: -10%;
+    width: 500px;
+    z-index: 1;
+    top: -31%;
+    height: 550px;
+
+}
+
+.img-layer{
+    background-color: #FC153B;
+    width: 68px;
+    height: 40px;
+    position: absolute;
+    z-index: 9;
+    bottom: 84%;
+    left: 34%;
+}
+
+

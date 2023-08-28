@@ -1,0 +1,56 @@
+.container{
+    width:100%;
+    margin:auto;
+    margin-top:100px ;
+    margin-bottom: 100px;
+    background-color:#f7f8f9;
+    padding:50px 50px 100px;
+    border-radius: 15px;
+    text-align: center;
+    height: 550px;
+}
+
+.km-testimonial-content{
+    background-color: #FFF;
+    height: 208px;
+    width: 360px;
+    padding:25px;
+    box-shadow:0 0 14px #dcdcdc;
+    /* height: ; */
+}
+
+ span{
+    color:#24B8AF
+}
+
+ h2{
+    font-family: "Oranienbaum" , Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color:#22235A ;
+    /* color:#000; */
+    margin: 10px 0px 60px;
+}
+
+p{
+    color: #6E6D7A;
+    font-size: 14px;
+    line-height: 2;
+}
+
+h3{
+    font-size:16px ;
+    color:#22235A ;
+    margin-top: 10px;
+}
+
+img{
+    width:70px;
+    height:70px;
+    border-radius: 50%;
+    border: 3px solid #FFF;
+    margin-top: 13px;
+}
+
+.sub-p{
+    line-height: 1;
+}

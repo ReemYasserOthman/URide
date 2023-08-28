@@ -1,0 +1,77 @@
+*{
+    font-family: Circular,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.app-advantages{
+    text-align: center;
+    margin: 80px 0px 30px 0px;
+    padding: 80px 0px 30px 0px;
+}
+
+.container{
+    width: 97%;
+    margin: auto;
+}
+
+.app-advantages .row{
+    margin: 40px 0px;
+    position: relative;
+    left: -4%;
+}
+
+h1 , h2 , h3{
+    font-weight: 900;  
+}
+
+h1{
+    font-size: 60px;
+    line-height: 1.2;
+}
+
+h3{
+    margin-top: 50px;
+    font-size: 33px;
+    /* text-decoration:underline */
+    /* font-style: italic; */
+}
+
+.time-heading{
+    margin-left: -50px;
+}
+
+.money-heading{
+    margin-left: -20px;
+}
+
+p{
+    font-size: 25px;
+    color: rgba(33,37,41,1.0);
+    line-height:36px;
+    text-align: left;
+    margin-left: 70px;
+    padding-left: 70px;
+    width: 100%;
+}
+
+img{
+    width: 200px;
+}
+
+.money-img{
+    margin-top: 30px;
+}
+
+.border-bottom{
+    border-bottom: 1px solid #a7a6a6;
+    width: 80%;
+    margin: auto;
+}
+.img-layer{
+    background-color: #fc153b;
+    width: 20px;
+    top: 40px;
+    height: 20px;
+    position: absolute;
+    left: 205px;
+    border-radius:50% ;
+}

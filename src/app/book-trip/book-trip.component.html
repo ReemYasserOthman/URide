@@ -1,0 +1,70 @@
+<div class="bg-gray">
+    
+    <!-- <div id="alert" class="alert alert-success w-15 py-3 ms-auto mt-3 me-3 alert-dismissible" role="alert" [class]="show == false ? 'hideAlert':'showAlert'">
+        Journey is choosed successfully
+     </div> -->
+    <div class="container" style="padding-top:140px">
+       
+                <div class="journey" *ngFor="let trip of selectedTrips">
+                    <div class="row">
+                        <div class="w-2">
+                            <time datetime="2022-04-02 02:00:00">{{trip.leavingTime}}</time>
+                        </div>
+                        <div class="w-3">
+                            <div class="border"></div>
+                        </div>
+                        <div class="w-1">
+                            <div class="mg"> </div>
+                        </div>
+                        <div class="w-3">
+                            <div class="border"></div>
+                        </div>
+                        <div class="w-2">
+                            <time class="col-lg-4" datetime="2022-04-02 02:00:00">
+                                {{trip.returing}}
+                            </time>
+                            
+                        </div>
+                        <div class="w-4">
+                            <span class="price d-block">EGP {{trip.price}} /seat</span>
+                            <span>Check for promos inside</span>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-md-7">
+                            <span class="d-block"> {{trip.startCityName}}</span>
+                            <!-- <span>Cairo</span> -->
+                        </div>
+                        <div class="col-md-5">
+                            <span class="d-block">{{trip.distinationCityName}} </span>
+                            <!-- <span>Alexandria</span> -->
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-9 border-btm"></div>
+                        <div class="col-md-2">
+                            <button class="btn btn-trip ms-4" (click)="chooseTrip(trip.id)"> 
+                                <a href="{{'https://web.whatsapp.com/send?phone=+2' + trip.phoneNumber}}" target="_blank" style="color: white; text-decoration:none">
+                                ChooseTrip </a></button>
+                            <!-- 2 up -->
+                            <!-- (click)="chooseTrip(trip.id)" -->
+                        </div>
+                    </div>
+                </div>
+                
+            
+            
+            <div >
+                <div class="text-center py-5 mt-3 mb-5" *ngIf="selectedTrips?.length == 0">
+                    <img src="assets/img/no_results.svg" alt="no results">
+                     <h3>No trips</h3>
+                     <p>You don't have any trips right now</p>
+                </div>
+            </div>
+           
+        </div>
+    
+    <app-footer></app-footer>
+</div>

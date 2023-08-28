@@ -1,0 +1,109 @@
+/* .app-testemonials{
+    position: relative;
+    height: 1100px;
+    margin-top: 50px;
+    padding-top: 60px;
+    width: 80%;
+    margin: auto;
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+}
+
+.download-our-app{
+    margin-top: 50px;
+    padding-top: 50px;
+}
+
+.download-our-app img{
+    width: 60%;
+    position: relative;
+    left: 12%;
+}
+
+.download-our-app .download-our-app-info{
+    padding-top: 40px;
+}
+
+.download-our-app span{
+    color:#24B8AF ;
+}
+
+.download-our-app h2{
+    color: #22235A;
+}
+
+.download-our-app p{
+    margin-top: 20px;
+    color:#6E6D7A;
+}
+
+.download-our-app button{
+    border: none;
+    color: #FFF;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.download-our-app button.first{
+    background-color: #24B8AF;
+    margin-right: 10px;
+}
+
+.download-our-app button.second{
+    background-color: #F9695E
+}
+
+app-testimonial{
+    position: absolute;
+    top:34%
+} */
+
+*{
+    font-family: Circular,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.download-app{
+    margin: 60px 0px;
+    padding : 60px 0px
+}
+
+img{
+    width: 90%;
+}
+
+.download-caption{
+    margin: 70px 0px;
+    padding: 70px 0px;
+}
+
+.download-caption h2{
+    font-weight: 900;
+    font-size: 60px;
+}
+
+.caption-border{
+    margin:25px 0px 0px 10px;
+    border-bottom : 7px solid #fc153b;
+    width: 120px;
+}
+
+p{
+    font-size: 30px;
+    color: rgba(33,37,41,1.0);
+    line-height:36px;
+    padding: 50px 0px;
+}
+
+.download-caption button {
+    background-color: #fc153b;
+    text-transform: uppercase;
+    color: #FFF;
+    font-weight: 900;
+    padding: 19px 35px;
+    font-size: 18px;
+    border: 1px solid #fc153b;
+}

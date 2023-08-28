@@ -1,0 +1,89 @@
+<body>
+    <div class="journey-container">
+        <div class="bg">
+            
+            <h2>Book Your Travel Ride Now</h2>
+            <p>Travel and Commute Between Cities With Ease.</p>
+            <div class="add-journey">
+                <div class="journey-info">
+                     <div class="row ms-4">
+                        <div class="labels ">
+                            <!-- <label for="" class="col-md-2"></label> -->
+                            <label for="" class="col-lg-3">From</label>
+                            <label for="" class="col-lg-3 ps-5 ms-4">To</label>
+                            <label for="" class="col-lg-3" style="margin-left:127px">Leaving Time</label>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                   <form #postForm="ngForm" (ngSubmit)="searchTrip(postForm.value)">
+                    <div class="row ms-4">
+                        <div class="from col-lg-3">
+                                <select name="startCityId" class="form-control me-3" required ngModel>
+                                   <option *ngFor="let city of cityData;" value="{{city.name}}" >{{ city.name}}</option>
+                                </select>
+                        </div>
+                        <div class="to col-lg-3">
+                            <select name="distinationCityId" required ngModel>
+                                <option *ngFor="let city of cityData;" value="{{city.name}}" >{{ city.name}}</option>
+                             </select>
+                        </div>
+                        
+                        <div class="date col-lg-3">
+                            <input type="date" class="form-control" name="leavingTime" required ngModel>
+                        </div>
+                       
+                        <div class="btn-con col-lg-3">
+                            <button class="btn btn-search">search now</button>
+                        </div>
+                    </div>
+                   </form>
+                </div>
+    
+            </div>
+        </div>
+        <div class="journey-advantages">
+            <div class="container">
+                <div class="row">
+                    <div class="arrive-on-time col">
+                        <img src="assets/img/bus_arrived.svg"  alt="">
+    
+                        <h3>Arrive On Time</h3>
+                        <p>Our scheduled, non-stop trips will get you there faster.</p>
+                    </div>
+                    <div class="comfort col">
+                        <img src="assets/img/bus_comfort.svg" alt="" style="width: 150px; height: 90px;">
+                        <h3>Your Comfort Matters</h3>
+                        <p>Enjoy the extra legroom and entertainment available onboard.</p>
+                    </div>
+                    <div class="tracking col">
+                        <img src="assets/img/bus_tracking.svg" alt="">
+                        <h3>Live Taracking</h3>
+                        <p>Always stay updated with your bus location.</p>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+   
+    <div class="download-app">
+        <div class="row">
+            <div class="download-app-caption col-9">
+                <div class="row">
+                    <p>Download The App to Enjoy Easy Booking and Ride Tracking!</p>
+                <p class="p-description">Working across cities, visiting family, or taking that long awaited vacation. Uride
+                    Travel just made it easier! Download the app today and unlock the full experience.</p>
+                </div>
+                    <div class="row">
+                        <img src="assets/img/appstore.png" alt="app store">
+                        <img src="assets/img/googleplay.png" alt="google play">
+                    </div>
+            </div>
+            <div class="download-app-img col-3">
+                <img src="assets/img/mobile-app.PNG" alt="mobile app" />
+            </div>
+            <div class="clearfix"></div>
+        </div>              
+    </div>
+    <app-footer class="footer"></app-footer>
+</body>
